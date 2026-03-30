@@ -1,53 +1,75 @@
-☕ Bright Coffee Shop Sales Analysis (SQL Project)
-📌 Project Overview
+# ☕ Bright Coffee Shop Sales Analysis (SQL Project)
 
-This project analyzes historical transactional data from Bright Coffee Shop to generate actionable insights for strategic decision-making.
+## 📌 Project Overview
+This project analyzes historical transactional data from **Bright Coffee Shop** to generate actionable business insights for a new CEO.  
 
-The primary objective is to leverage SQL and data analytics techniques to uncover sales patterns, optimize product performance, and support business growth for a new CEO.
+The goal is to use SQL and data analytics techniques to understand sales performance, identify trends, and provide recommendations to improve revenue and product performance.
 
-🎯 Objectives
-Identify top-performing products based on revenue
-Analyze customer purchasing behavior across different time intervals
-Determine peak business hours and low-activity periods
-Evaluate sales trends across product categories
-Provide data-driven recommendations to improve overall performance
-🛠 Tools & Technologies
-SQL (Databricks) – Data cleaning, transformation, and analysis
-Microsoft Excel / Power BI – Data visualization and dashboards
-GitHub – Version control and project documentation
-🔄 Data Processing & Transformation
+---
 
-To prepare the dataset for analysis, the following steps were performed:
+## 🎯 Objectives
+- Identify which products generate the most revenue  
+- Analyze peak business hours and customer activity  
+- Examine sales trends across products and time intervals  
+- Provide data-driven recommendations to improve performance  
 
-Converted raw data into a structured CSV format
-Cleaned the unit_price column (handled comma-separated values such as '3,1')
-Created a new metric:
-total_amount = unit_price × transaction_qty
-Engineered time-based features:
-30-minute transaction time buckets
-Hourly time segmentation
-Grouped and aggregated data by product categories and time intervals
-📊 Key Analysis Performed
-Revenue analysis by product category
-Time-based sales analysis (hourly and 30-minute intervals)
-Transaction volume and quantity trends
-Demand segmentation using CASE statements
-Identification of peak vs low-performing periods
-🔍 Key Insights
-A small group of products contributes disproportionately to total revenue
-Sales peak during specific periods (notably morning rush hours)
-Certain time intervals show consistently low customer activity
-Product demand varies significantly depending on time of day
-💡 Recommendations
-Increase targeted marketing during low-sales periods
-Prioritize inventory for high-performing products
-Introduce promotions (discounts/bundles) for underperforming items
-Align staffing levels with peak business hours to improve efficiency
-🚀 Project Impact
+---
 
-This analysis provides actionable insights that can help:
+## 🛠 Tools & Technologies
+- **SQL** (Data Cleaning & Analysis)  
+- **Databricks / SQL Environment**  
+- **Microsoft Excel / Power BI** (Visualization)  
+- **GitHub** (Project documentation & version control)  
 
-Improve revenue generation
-Optimize inventory management
-Enhance customer engagement strategies
-Support data-driven decision-making
+---
+
+## 🔄 Data Processing & Transformation
+The dataset required cleaning and transformation before analysis:
+
+- Converted raw data into structured format (CSV)  
+- Cleaned `unit_price` column (handled comma-separated values like `'3,1'`)  
+- Created calculated field:  
+  - `total_amount = unit_price * transaction_qty`  
+
+### ⏱ Feature Engineering
+- Created **30-minute transaction time buckets**  
+- Performed **hourly analysis using timestamps**  
+- Grouped data by **product types and time intervals**  
+
+---
+
+## 📊 Key Analysis Performed
+- Revenue analysis by product type  
+- Time-based sales analysis (hourly & 30-minute intervals)  
+- Transaction volume and quantity analysis  
+- Demand segmentation using `CASE` statements  
+- Identification of peak and low-performing periods  
+
+---
+
+## 🔍 Key Insights
+- Certain product categories generate significantly higher revenue than others  
+- Sales peak during specific time intervals (e.g., morning rush hours)  
+- Some time periods show low customer activity, indicating opportunities for promotions  
+- Sales trends vary across different products and time buckets  
+
+---
+
+## 💡 Recommendations
+- Increase marketing during low-sales periods  
+- Focus on stocking high-performing products  
+- Promote underperforming items through discounts or bundles  
+- Align staffing and operations with peak hours  
+
+---
+
+## 🚀 Project Impact
+This project demonstrates how data analytics can be used to:
+- Improve revenue generation  
+- Optimize inventory management  
+- Enhance customer engagement strategies  
+- Support data-driven decision-making  
+
+---
+
+
