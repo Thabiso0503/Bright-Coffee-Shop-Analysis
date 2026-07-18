@@ -168,24 +168,8 @@ The insights produced can help management:
 
 ---
 
-# 📷 Dashboard Preview
 
-> Add your dashboard screenshots here.
 
-```
-images/dashboard1.png
-images/dashboard2.png
-```
-
-Example:
-
-```markdown
-<p align="center">
-<img src="images/dashboard1.png" width="900">
-</p>
-```
-
----
 
 # 📚 Skills Demonstrated
 
@@ -211,7 +195,7 @@ Final Year BSc Computer Science Student
 Walter Sisulu University
 
 - GitHub: https://github.com/Thabiso0503
-- LinkedIn: *(Add your LinkedIn profile)*
+- LinkedIn: *www.linkedin.com/in/thabiso-nkambule-08a037342*
 
 ---
 
