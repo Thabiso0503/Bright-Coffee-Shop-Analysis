@@ -1,75 +1,224 @@
-# ☕ Bright Coffee Shop Sales Analysis (SQL Project)
+<div align="center">
 
-## 📌 Project Overview
-This project analyzes historical transactional data from **Bright Coffee Shop** to generate actionable business insights for a new CEO.  
+# ☕ Bright Coffee Shop Sales Analysis
 
-The goal is to use SQL and data analytics techniques to understand sales performance, identify trends, and provide recommendations to improve revenue and product performance.
+### SQL Data Analytics Project
 
----
+**Analyst:** Thabiso Nkambule
 
-## 🎯 Objectives
-- Identify which products generate the most revenue  
-- Analyze peak business hours and customer activity  
-- Examine sales trends across products and time intervals  
-- Provide data-driven recommendations to improve performance  
+**Project:** Bright Coffee Shop Sales Analysis
 
----
+**Tools:** SQL • Databricks SQL • Power BI • Excel
 
-## 🛠 Tools & Technologies
-- **SQL** (Data Cleaning & Analysis)  
-- **Databricks / SQL Environment**  
-- **Microsoft Excel / Power BI** (Visualization)  
-- **GitHub** (Project documentation & version control)  
+</div>
 
----
+<div align="center">
 
-## 🔄 Data Processing & Transformation
-The dataset required cleaning and transformation before analysis:
+![SQL](https://img.shields.io/badge/SQL-Database-blue?style=for-the-badge&logo=mysql)
+![Databricks](https://img.shields.io/badge/Databricks-SQL-red?style=for-the-badge&logo=databricks)
+![PowerBI](https://img.shields.io/badge/PowerBI-Visualization-yellow?style=for-the-badge&logo=powerbi)
+![Excel](https://img.shields.io/badge/Microsoft-Excel-green?style=for-the-badge&logo=microsoft-excel)
+![GitHub](https://img.shields.io/badge/GitHub-Version_Control-black?style=for-the-badge&logo=github)
 
-- Converted raw data into structured format (CSV)  
-- Cleaned `unit_price` column (handled comma-separated values like `'3,1'`)  
-- Created calculated field:  
-  - `total_amount = unit_price * transaction_qty`  
-
-### ⏱ Feature Engineering
-- Created **30-minute transaction time buckets**  
-- Performed **hourly analysis using timestamps**  
-- Grouped data by **product types and time intervals**  
+</div>
 
 ---
 
-## 📊 Key Analysis Performed
-- Revenue analysis by product type  
-- Time-based sales analysis (hourly & 30-minute intervals)  
-- Transaction volume and quantity analysis  
-- Demand segmentation using `CASE` statements  
-- Identification of peak and low-performing periods  
+# 📂 Project Structure
+
+```
+BrightCoffeeShop_SQL_Project
+│
+├── Dataset
+│   └── coffee_shop_sales.csv
+│
+├── SQL Scripts
+│   ├── Data_Cleaning.sql
+│   ├── Feature_Engineering.sql
+│   ├── Sales_Analysis.sql
+│   └── Business_Insights.sql
+│
+├── Dashboard
+│   ├── PowerBI.pbix
+│   └── Dashboard_Screenshots
+│
+├── README.md
+└── Report.pdf
+```
 
 ---
 
-## 🔍 Key Insights
-- Certain product categories generate significantly higher revenue than others  
-- Sales peak during specific time intervals (e.g., morning rush hours)  
-- Some time periods show low customer activity, indicating opportunities for promotions  
-- Sales trends vary across different products and time buckets  
+# 📌 Project Overview
+
+This project analyzes historical transactional data from **Bright Coffee Shop** to generate actionable business insights for business decision-makers.
+
+The analysis focuses on identifying revenue drivers, customer purchasing patterns, peak business hours, and opportunities to improve profitability using SQL and data analytics techniques.
 
 ---
 
-## 💡 Recommendations
-- Increase marketing during low-sales periods  
-- Focus on stocking high-performing products  
-- Promote underperforming items through discounts or bundles  
-- Align staffing and operations with peak hours  
+# 🎯 Objectives
+
+- Identify the highest revenue-generating products
+- Analyze customer purchasing behaviour
+- Discover peak business hours
+- Evaluate sales performance over time
+- Generate business recommendations using data
 
 ---
 
-## 🚀 Project Impact
-This project demonstrates how data analytics can be used to:
-- Improve revenue generation  
-- Optimize inventory management  
-- Enhance customer engagement strategies  
-- Support data-driven decision-making  
+# 🛠 Tools & Technologies
+
+| Tool | Purpose |
+|-------|----------|
+| SQL | Data Cleaning & Analysis |
+| Databricks SQL | Query Execution |
+| Power BI | Dashboard Creation |
+| Microsoft Excel | Data Exploration |
+| GitHub | Documentation & Version Control |
 
 ---
+
+# 🔄 Data Cleaning & Transformation
+
+The raw transactional dataset required preprocessing before analysis.
+
+### Tasks Performed
+
+- Converted raw data into CSV format
+- Cleaned inconsistent values in **unit_price**
+- Removed formatting issues caused by commas
+- Corrected data types
+- Created calculated columns
+
+### Calculated Field
+
+```sql
+total_amount = unit_price * transaction_qty
+```
+
+---
+
+# ⚙️ Feature Engineering
+
+Additional business metrics were created to improve analysis.
+
+✔ Created 30-minute transaction intervals
+
+✔ Extracted hourly timestamps
+
+✔ Generated revenue metrics
+
+✔ Categorized sales periods
+
+✔ Grouped products into categories
+
+---
+
+# 📊 SQL Analysis Performed
+
+The project includes analysis such as:
+
+- Revenue by product category
+- Total sales
+- Number of transactions
+- Quantity sold
+- Hourly sales trends
+- 30-minute interval analysis
+- Peak shopping periods
+- Low-performing products
+- Demand segmentation using CASE statements
+
+---
+
+# 📈 Key Insights
+
+✔ Coffee and beverage products generated the highest revenue.
+
+✔ Sales peaked during morning hours, indicating commuter demand.
+
+✔ Certain afternoon periods experienced significantly lower customer activity.
+
+✔ Some products consistently underperformed despite high availability.
+
+✔ Revenue distribution varied considerably across different product categories.
+
+---
+
+# 💡 Business Recommendations
+
+- Increase promotions during low-sales periods.
+- Improve inventory planning for high-demand products.
+- Bundle underperforming items with popular products.
+- Schedule more staff during peak hours.
+- Introduce targeted promotions for slow-moving products.
+
+---
+
+# 🚀 Project Impact
+
+This project demonstrates how SQL can be used to transform raw transactional data into actionable business intelligence.
+
+The insights produced can help management:
+
+- Increase revenue
+- Improve inventory planning
+- Optimize staffing schedules
+- Enhance customer experience
+- Support data-driven decision making
+
+---
+
+# 📷 Dashboard Preview
+
+> Add your dashboard screenshots here.
+
+```
+images/dashboard1.png
+images/dashboard2.png
+```
+
+Example:
+
+```markdown
+<p align="center">
+<img src="images/dashboard1.png" width="900">
+</p>
+```
+
+---
+
+# 📚 Skills Demonstrated
+
+- SQL Queries
+- Data Cleaning
+- Data Transformation
+- Feature Engineering
+- Aggregate Functions
+- CASE Statements
+- Date & Time Functions
+- Business Intelligence
+- Data Visualization
+- Analytical Thinking
+
+---
+
+# 👨‍💻 Author
+
+**Thabiso Nkambule**
+
+Final Year BSc Computer Science Student
+
+Walter Sisulu University
+
+- GitHub: https://github.com/Thabiso0503
+- LinkedIn: *(Add your LinkedIn profile)*
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a star!
+
+</div>
 
 
